@@ -5,4 +5,13 @@
     <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-fields-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/Service9999/Schemas/FIXML/fixml-fields-impl-5-0.xsd"/>
     <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-fields-base-5-0.xsd" uri="src/conf/xml-resources/web-services/Service9999/Schemas/FIXML/fixml-fields-base-5-0.xsd"/>
     <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-datatypes-5-0.xsd" uri="src/conf/xml-resources/web-services/Service9999/Schemas/FIXML/fixml-datatypes-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/WSDL/Service0106.wsdl" uri="src/conf/xml-resources/web-services/OrderNotification/wsdl/Service0106.wsdl"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/BusApp/FirmInfo.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/BusApp/FirmInfo.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-order-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-order-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-order-base-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-order-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-components-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-components-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-components-base-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-components-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-fields-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-fields-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-fields-base-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-fields-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices/Schemas/FIXML/fixml-datatypes-5-0.xsd" uri="src/conf/xml-resources/web-services/OrderNotification/Schemas/FIXML/fixml-datatypes-5-0.xsd"/>
 </catalog>

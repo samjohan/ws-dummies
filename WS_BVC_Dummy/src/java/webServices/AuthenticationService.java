@@ -25,7 +25,7 @@ public class AuthenticationService {
 
         int validationReply = query.validateUser(parameters1.getUsername(), parameters1.getPassword());
         
-        if (validationReply == 1) {
+        if (validationReply == 1 || validationReply == 6) {
             query.setPassword(parameters1.getUsername(), parameters1.getNewPassword());            
             reply.setUserStat(5);
             reply.setUserStatText(query.getChangePassMessage(5));
