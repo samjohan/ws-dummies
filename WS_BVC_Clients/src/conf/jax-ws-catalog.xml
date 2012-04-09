@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/WSDL_Compacto/Service9999.wsdl" uri="wsdl/Service9999.wsdl"/>
+    <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-components-base-5-0.xsd" uri="src/conf/xml-resources/web-service-references/Service9999/Schemas/FIXML/fixml-components-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-fields-impl-5-0.xsd" uri="src/conf/xml-resources/web-service-references/Service9999/Schemas/FIXML/fixml-fields-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-fields-base-5-0.xsd" uri="src/conf/xml-resources/web-service-references/Service9999/Schemas/FIXML/fixml-fields-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/DefinicionServicios/DefinicionServicios/Schemas/FIXML/fixml-datatypes-5-0.xsd" uri="src/conf/xml-resources/web-service-references/Service9999/Schemas/FIXML/fixml-datatypes-5-0.xsd"/>
+</catalog>
