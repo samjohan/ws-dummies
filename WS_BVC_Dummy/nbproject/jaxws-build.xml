@@ -47,5 +47,27 @@
         <delete dir="${build.generated.dir}/jax-wsCache/service/Service9999"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service9999"/>
     </target>
-    <target name="wsimport-service-generate" depends="wsimport-service-Service9999"/>
+    <target name="wsimport-service-OrderNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/OrderNotification"/>
+        <property name="service-wsdl-OrderNotification" location="${meta.inf}/xml-resources/web-services/OrderNotification/wsdl/Service0106.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/OrderNotification" destdir="${build.generated.dir}/jax-wsCache/service/OrderNotification" wsdl="${service-wsdl-OrderNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-OrderNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/OrderNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/OrderNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-OrderNotification" location="${meta.inf}/wsdl/OrderNotification"/>
+        <property name="sourceLocation-OrderNotification" location="${meta.inf}/xml-resources/web-services/OrderNotification/wsdl/"/>
+        <copy todir="${targetLocation-OrderNotification}">
+            <fileset dir="${sourceLocation-OrderNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-OrderNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/OrderNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0106"/>
+    </target>
+    <target name="wsimport-service-generate" depends="wsimport-service-Service9999, wsimport-service-OrderNotification"/>
 </project>

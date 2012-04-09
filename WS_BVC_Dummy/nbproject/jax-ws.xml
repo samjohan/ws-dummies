@@ -29,6 +29,34 @@
         </wsimport-option>
       </wsimport-options>
     </service>
+    <service name="OrderNotification">
+      <implementation-class>webServices.OrderNotification</implementation-class>
+      <wsdl-url>file:/E:/Downloads/algocodex/WebServices/WSDL/Service0106.wsdl</wsdl-url>
+      <local-wsdl-file>Service0106.wsdl</local-wsdl-file>
+      <service-name>Service0106</service-name>
+      <port-name>portTypeEndpoint</port-name>
+      <package-name>co.com.bvc.services.service0106</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <use-provider>false</use-provider>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </service>
   </services>
   <clients/>
   <jsr109>true</jsr109>
