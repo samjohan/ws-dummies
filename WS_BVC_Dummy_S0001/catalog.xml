@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/Service0001.wsdl" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/Service0001.wsdl"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-order-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-order-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-order-base-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-order-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-components-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-components-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-components-base-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-components-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-fields-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-fields-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-fields-base-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-fields-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0001/fixml-datatypes-5-0.xsd" uri="src/conf/xml-resources/web-services/AutomaticOrderInsertion/wsdl/fixml-datatypes-5-0.xsd"/>
+</catalog>
