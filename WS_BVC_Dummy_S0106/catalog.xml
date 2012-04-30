@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/Service0106.wsdl" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/Service0106.wsdl"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/FirmInfo.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/FirmInfo.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/fixml-components-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/fixml-components-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/fixml-components-base-5-0.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/fixml-components-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/fixml-fields-impl-5-0.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/fixml-fields-impl-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/fixml-fields-base-5-0.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/fixml-fields-base-5-0.xsd"/>
+    <system systemId="file:/E:/Downloads/algocodex/WebServices-fixed/Service0106/fixml-datatypes-5-0.xsd" uri="src/conf/xml-resources/web-services/OrdersNotification/wsdl/fixml-datatypes-5-0.xsd"/>
+</catalog>
