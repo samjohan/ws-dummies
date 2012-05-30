@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.7.0 (http://www.liquid-technologies.com) -->
+<xs:schema xmlns:fm="http://www.fixprotocol.org/FIXML-5-0/METADATA" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fixprotocol.org/FIXML-5-0" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.fixprotocol.org/FIXML-5-0" xsi:schemaLocation="http://www.fixprotocol.org/FIXML-5-0/METADATA fixml-metadata-5-0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:redefine schemaLocation="fixml-marketdata-base-5-0.xsd">
+    <xs:attributeGroup name="MDFullGrpAttributes">
+      <xs:attributeGroup ref="MDFullGrpAttributes" />
+      <xs:attribute name="Volatility" type="xs:float" use="optional" />
+      <xs:attribute name="YieldPx" type="xs:float" use="optional" />
+      <xs:attribute name="YieldLow" type="xs:float" use="optional" />
+      <xs:attribute name="YieldHigh" type="xs:float" use="optional" />
+      <xs:attribute name="Depth" type="xs:float" use="optional" />
+      <xs:attribute name="Balance" type="xs:float" use="optional" />
+      <xs:attribute name="AutoPx" type="xs:float" use="optional" />
+      <xs:attribute name="ManPx" type="xs:float" use="optional" />
+      <xs:attribute name="Shrd" type="xs:string" use="optional" />
+      <xs:attribute name="LvlPx" type="xs:float" use="optional" />
+      <xs:attribute name="LvlLength" type="xs:float" use="optional" />
+      <xs:attribute name="OpenPx" type="xs:float" use="optional" />
+      <xs:attribute name="ClosePx" type="xs:float" use="optional" />
+      <xs:attribute name="LastPx" type="xs:float" use="optional" />
+      <xs:attribute name="LastQty" type="xs:float" use="optional" />
+      <xs:attribute name="PrevDt" type="xs:string" use="optional" />
+      <xs:attribute name="TrdQty" type="xs:float" use="optional" />
+    </xs:attributeGroup>
+    
+    <xs:group name="MarketDataSnapshotFullRefreshElements">
+      <xs:sequence>
+        <xs:group ref="MarketDataSnapshotFullRefreshElements" />
+        <xs:element minOccurs="0" name="CusAttr" type="CustomAttrs" />
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Info" type="Info_Block_t" />
+      </xs:sequence>
+    </xs:group>
+    
+    <xs:attributeGroup name="MarketDataSnapshotFullRefreshAttributes">
+    	<xs:attributeGroup ref="MarketDataSnapshotFullRefreshAttributes"/>
+    	<xs:attribute name="Txt" type="xs:string" use="optional" />
+    </xs:attributeGroup>
+    
+    
+    <xs:group name="MDFullGrpElements">
+          <xs:sequence>
+            <xs:group ref="MDFullGrpElements" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Info" type="Info_Block_t" />
+          </xs:sequence>
+    </xs:group>
+    
+  </xs:redefine>
+  <xs:complexType name="CustomAttrs">
+    <xs:attribute name="FutCount" type="xs:long" use="optional" />
+    <xs:attribute name="EqCount" type="xs:long" use="optional" />
+  </xs:complexType>
+</xs:schema>
