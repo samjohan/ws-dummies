@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Created by TIBCO WSDL-->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://www.bvc.com.co/Services/Service0074" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="http://www.bvc.com.co/BUS" xmlns:ns1="http://www.fixprotocol.org/FIXML-5-0" targetNamespace="http://www.bvc.com.co/Services/Service0074">
+	<wsdl:types>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.bvc.com.co/BUS" elementFormDefault="qualified" attributeFormDefault="unqualified">
+			<xs:include schemaLocation="FirmInfo.xsd"/>
+		</xs:schema>
+		<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.fixprotocol.org/FIXML-5-0" elementFormDefault="qualified" attributeFormDefault="unqualified">
+			<xs:include schemaLocation="fixml-marketdata-impl-5-0.xsd"/>
+		</xs:schema>
+	</wsdl:types>
+	<wsdl:message name="firm">
+		<wsdl:part name="parameters" element="ns:firm"/>
+	</wsdl:message>
+	<wsdl:message name="FIXML">
+		<wsdl:part name="parameters" element="ns1:FIXML"/>
+	</wsdl:message>
+	<wsdl:portType name="portType">
+		<wsdl:operation name="NotificacionIndicesFirmasRqstOp">
+			<wsdl:input message="tns:firm"/>
+			<wsdl:output message="tns:FIXML"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="portTypeEndpointBinding" type="tns:portType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="NotificacionIndicesFirmasRqstOp">
+			<soap:operation soapAction="/Services/Service0074/Interface/Service0074.serviceagent/portTypeEndpoint/NotificacionIndicesFirmasRqstOp" style="document"/>
+			<wsdl:input>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body parts="parameters" use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="Service0074">
+		<wsdl:port name="portTypeEndpoint" binding="tns:portTypeEndpointBinding">
+			<soap:address location="https://busintegracion.bvc.com.co:443/Services/Service0074/Interface/Service0074.serviceagent/portTypeEndpoint"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

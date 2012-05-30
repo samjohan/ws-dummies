@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        -->
+<project xmlns:xalan="http://xml.apache.org/xslt" xmlns:ejbjarproject2="http://www.netbeans.org/ns/j2ee-ejbjarproject/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <mkdir dir="${classes.dir}"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${j2ee.platform.wsimport.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-service-AutomaticOrderInsertion" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion"/>
+        <property name="service-wsdl-AutomaticOrderInsertion" location="${meta.inf}/xml-resources/web-services/AutomaticOrderInsertion/wsdl/Service0001.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion" destdir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion" wsdl="${service-wsdl-AutomaticOrderInsertion}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AutomaticOrderInsertion}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-AutomaticOrderInsertion" location="${meta.inf}/wsdl/AutomaticOrderInsertion"/>
+        <property name="sourceLocation-AutomaticOrderInsertion" location="${meta.inf}/xml-resources/web-services/AutomaticOrderInsertion/wsdl/"/>
+        <copy todir="${targetLocation-AutomaticOrderInsertion}">
+            <fileset dir="${sourceLocation-AutomaticOrderInsertion}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-AutomaticOrderInsertion" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/AutomaticOrderInsertion"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0001"/>
+    </target>
+    <target name="wsimport-service-AuthenticationService" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/AuthenticationService"/>
+        <property name="service-wsdl-AuthenticationService" location="${meta.inf}/xml-resources/web-services/AuthenticationService/wsdl/Service9999.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/AuthenticationService" destdir="${build.generated.dir}/jax-wsCache/service/AuthenticationService" wsdl="${service-wsdl-AuthenticationService}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AuthenticationService}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/AuthenticationService"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/AuthenticationService">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-AuthenticationService" location="${meta.inf}/wsdl/AuthenticationService"/>
+        <property name="sourceLocation-AuthenticationService" location="${meta.inf}/xml-resources/web-services/AuthenticationService/wsdl/"/>
+        <copy todir="${targetLocation-AuthenticationService}">
+            <fileset dir="${sourceLocation-AuthenticationService}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-AuthenticationService" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/AuthenticationService"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service9999"/>
+    </target>
+    <target name="wsimport-service-OrdersNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/OrdersNotification"/>
+        <property name="service-wsdl-OrdersNotification" location="${meta.inf}/xml-resources/web-services/OrdersNotification/wsdl/Service0106.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/OrdersNotification" destdir="${build.generated.dir}/jax-wsCache/service/OrdersNotification" wsdl="${service-wsdl-OrdersNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-OrdersNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/OrdersNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/OrdersNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-OrdersNotification" location="${meta.inf}/wsdl/OrdersNotification"/>
+        <property name="sourceLocation-OrdersNotification" location="${meta.inf}/xml-resources/web-services/OrdersNotification/wsdl/"/>
+        <copy todir="${targetLocation-OrdersNotification}">
+            <fileset dir="${sourceLocation-OrdersNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-OrdersNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/OrdersNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0106"/>
+    </target>
+    <target name="wsimport-service-OperationsNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/OperationsNotification"/>
+        <property name="service-wsdl-OperationsNotification" location="${meta.inf}/xml-resources/web-services/OperationsNotification/wsdl/Service0002.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/OperationsNotification" destdir="${build.generated.dir}/jax-wsCache/service/OperationsNotification" wsdl="${service-wsdl-OperationsNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-OperationsNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/OperationsNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/OperationsNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-OperationsNotification" location="${meta.inf}/wsdl/OperationsNotification"/>
+        <property name="sourceLocation-OperationsNotification" location="${meta.inf}/xml-resources/web-services/OperationsNotification/wsdl/"/>
+        <copy todir="${targetLocation-OperationsNotification}">
+            <fileset dir="${sourceLocation-OperationsNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-OperationsNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/OperationsNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0002"/>
+    </target>
+    <target name="wsimport-service-MarketPricesNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification"/>
+        <property name="service-wsdl-MarketPricesNotification" location="${meta.inf}/xml-resources/web-services/MarketPricesNotification/wsdl/Service0072.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification" destdir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification" wsdl="${service-wsdl-MarketPricesNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-MarketPricesNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-MarketPricesNotification" location="${meta.inf}/wsdl/MarketPricesNotification"/>
+        <property name="sourceLocation-MarketPricesNotification" location="${meta.inf}/xml-resources/web-services/MarketPricesNotification/wsdl/"/>
+        <copy todir="${targetLocation-MarketPricesNotification}">
+            <fileset dir="${sourceLocation-MarketPricesNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-MarketPricesNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/MarketPricesNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0072"/>
+    </target>
+    <target name="wsimport-service-IndicesNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/IndicesNotification"/>
+        <property name="service-wsdl-IndicesNotification" location="${meta.inf}/xml-resources/web-services/IndicesNotification/wsdl/Service0074.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/IndicesNotification" destdir="${build.generated.dir}/jax-wsCache/service/IndicesNotification" wsdl="${service-wsdl-IndicesNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-IndicesNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/IndicesNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/IndicesNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-IndicesNotification" location="${meta.inf}/wsdl/IndicesNotification"/>
+        <property name="sourceLocation-IndicesNotification" location="${meta.inf}/xml-resources/web-services/IndicesNotification/wsdl/"/>
+        <copy todir="${targetLocation-IndicesNotification}">
+            <fileset dir="${sourceLocation-IndicesNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-IndicesNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/IndicesNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0074"/>
+    </target>
+    <target name="wsimport-service-SpeciesNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification"/>
+        <property name="service-wsdl-SpeciesNotification" location="${meta.inf}/xml-resources/web-services/SpeciesNotification/wsdl/Service0107.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification" destdir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification" wsdl="${service-wsdl-SpeciesNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-SpeciesNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-SpeciesNotification" location="${meta.inf}/wsdl/SpeciesNotification"/>
+        <property name="sourceLocation-SpeciesNotification" location="${meta.inf}/xml-resources/web-services/SpeciesNotification/wsdl/"/>
+        <copy todir="${targetLocation-SpeciesNotification}">
+            <fileset dir="${sourceLocation-SpeciesNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-SpeciesNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/SpeciesNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0107"/>
+    </target>
+    <target name="wsimport-service-BestTipsNotification" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification"/>
+        <property name="service-wsdl-BestTipsNotification" location="${meta.inf}/xml-resources/web-services/BestTipsNotification/wsdl/Service0128.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification" destdir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification" wsdl="${service-wsdl-BestTipsNotification}" catalog="catalog.xml" extension="true" verbose="true" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-BestTipsNotification}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+        <property name="targetLocation-BestTipsNotification" location="${meta.inf}/wsdl/BestTipsNotification"/>
+        <property name="sourceLocation-BestTipsNotification" location="${meta.inf}/xml-resources/web-services/BestTipsNotification/wsdl/"/>
+        <copy todir="${targetLocation-BestTipsNotification}">
+            <fileset dir="${sourceLocation-BestTipsNotification}"/>
+        </copy>
+    </target>
+    <target name="wsimport-service-clean-BestTipsNotification" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/service/BestTipsNotification"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/co/com/bvc/services/service0128"/>
+    </target>
+    <target name="wsimport-service-generate" depends="wsimport-service-AutomaticOrderInsertion, wsimport-service-AuthenticationService, wsimport-service-OrdersNotification, wsimport-service-OperationsNotification, wsimport-service-MarketPricesNotification, wsimport-service-IndicesNotification, wsimport-service-SpeciesNotification, wsimport-service-BestTipsNotification"/>
+</project>
